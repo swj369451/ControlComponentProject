@@ -2,6 +2,8 @@
 import { BaseControlComponent } from './baseControl/BaseControlComponent.js'
 import { DrawerControlComponent } from './controlComponent/DrawerControlComponent.js'
 
+
+// 修改
 // 控件的数据
 let data = {}
 // 控件的样式
