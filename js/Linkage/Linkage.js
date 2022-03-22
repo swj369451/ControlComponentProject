@@ -2,9 +2,9 @@
  * 联动
  */
 class Linkage {
-
+    static Map = new this.Map();
     constructor() {
-        this.linkageMap = new Map();
+        
     }
 }
 export { Linkage }

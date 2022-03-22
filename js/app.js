@@ -3,50 +3,54 @@ import { BaseControlComponent } from './baseControl/BaseControlComponent.js'
 import { DrawerControlComponent } from './controlComponent/DrawerControlComponent.js'
 
 
-// 修改2
+
 // 控件的数据
 let data = {}
 // 控件的样式
 let controlComponents = [
     {
         "name": "DrawerControlComponent",
-        
         "baseParm": {
-            "labelId":"drawerControlComponent",
+            "labelId": "drawerControlComponent",
             "dimension": {
-                "width": "35vw",
+                "width": "22vw",
                 "height": "80vh"
             },
             "backgrounds": {
-                "backgroundsColor": "rgba(0,0,0,0   )"
+                "backgroundsColor": "rgba(0,0,0,0)"
             },
-            "layout":{
-                "display":{
-                    "display":"flex",
-                    "flexDirection":"row"
+            "layout": {
+                "display": {
+                    "display": "flex",
+                    "flexDirection": "row"
                 }
             }
         },
         "handleParm": {
             "baseParm": {
-                "labelId":"handleControlComponent",
+                "labelId": "handleControlComponent",
                 "dimension": {
-                    "width": "5vw",
+                    "width": "2vw",
                     "height": "10vh"
                 },
                 "backgrounds": {
                     "backgroundsColor": "#444444"
                 },
-                "event":{
-                    
+                "event": {
+
+                },
+                "animation":{
+                    "animationName":"",
+                    "animationDuration":"",
+                    "animationIterationCount":""
                 }
             }
         },
         "boxParm": {
             "baseParm": {
-                "labelId":"boxControlComponent",
+                "labelId": "boxControlComponent",
                 "dimension": {
-                    "width": "30vw",
+                    "width": "20vw",
                     "height": "80vh"
                 },
                 "backgrounds": {
@@ -78,7 +82,7 @@ let main = function () {
 let renderControls = function (controlStyle) {
     let drawerControlComponent = new DrawerControlComponent(controlStyle);
     drawerControlComponent.render(app);
-    
+
 }
 let clearDefaultStyle = function () {
     let body = document.getElementsByTagName("body");

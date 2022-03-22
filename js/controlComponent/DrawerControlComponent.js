@@ -15,8 +15,8 @@ class DrawerControlComponent extends BaseControlComponent{
 
     render(parent){
         super.render(parent);
-        this.boxControlComponent.render(this.div);
-        this.handleControlComponent.render(this.div);
+        this.boxControlComponent.render(this.label);
+        this.handleControlComponent.render(this.label);
     }
     
 }
